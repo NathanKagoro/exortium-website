@@ -63,7 +63,7 @@ ${sprite}
 const footer = () => `
 <footer class="footer">
   <div class="footer__bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i>${reg()}</div>
-  <p class="footer__word fit" aria-hidden="true"><span class="fit__line" style="--k:.2573">Exortium</span></p>
+  <p class="footer__word fit" aria-hidden="true"><span class="fit__line" style="--k:.3481">Exortium</span></p>
   <div class="footer__cols">
     <nav class="footer__nav" aria-label="Footer">
       ${NAV.map((n) => `<a href="${n.href}">${n.label}</a>`).join('\n      ')}
@@ -112,7 +112,7 @@ ${SERVICES.map((s) => `  <article class="service" id="${s.id}">
 ${CASES.map((c, i) => `    <li class="case" role="group" aria-roledescription="slide" aria-label="${i + 1} of ${CASES.length}">
       <div class="case__poster">${posters[c.id]}</div>
       <div class="case__text">
-        <p class="case__sector">${c.sector} &middot; illustrative</p>
+        <p class="case__sector">${c.sector}, illustrative</p>
         <h3>${c.name}</h3>
         <p class="case__label">The brief we imagined</p>
         <p class="case__brief">&ldquo;${c.brief}&rdquo;</p>
@@ -132,7 +132,7 @@ ${CASES.map((c, i) => `    <li class="case" role="group" aria-roledescription="s
   cases: () => CASES.map((c) => `<article class="casefile" id="${c.id}">
   <div class="case__poster">${posters[c.id]}</div>
   <div class="case__text">
-    <p class="case__sector">${c.sector} &middot; illustrative</p>
+    <p class="case__sector">${c.sector}, illustrative</p>
     <h2>${c.name}</h2>
     <p class="case__label">The brief we imagined</p>
     <p class="case__brief">&ldquo;${c.brief}&rdquo;</p>

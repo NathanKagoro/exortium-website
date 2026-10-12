@@ -90,11 +90,9 @@ export const posters = {
     <circle cx="300" cy="250" r="128" fill="url(#ht-navy)"/>
     <path d="M300 204l44 32-17 52h-54l-17-52z" fill="${C.navy}"/>
     <path d="M300 204v-80M344 236l76-26M327 288l48 66M273 288l-48 66M256 236l-76-26" stroke="${C.navy}" stroke-width="7" fill="none"/>
-    <path d="M0 600V360h480v240h-52v-110a54 54 0 00-108 0v110h-52v-110a54 54 0 00-108 0v110h-52v-110a54 54 0 00-108 0z" fill="${C.cream}" transform="translate(0 0)"/>
+    <path d="M0 520V360h480v160h-52.5v-50a45 45 0 00-90 0v50h-52.5v-50a45 45 0 00-90 0v50h-52.5v-50a45 45 0 00-90 0v50z" fill="${C.cream}"/>
     <rect x="0" y="360" width="480" height="26" fill="${C.red}"/>
-    <text x="24" y="118" class="poster__t" font-size="96" fill="${C.cream}">NORTH</text>
-    <text x="24" y="118" class="poster__t" font-size="96" fill="none" stroke="${C.red}" stroke-width="2" transform="translate(5 5)">NORTH</text>
-    <text x="456" y="352" class="poster__t" font-size="54" fill="${C.cream}" text-anchor="end">BRIDGE FC</text>
+    <text x="240" y="584" class="poster__t" font-size="66" fill="${C.cream}" text-anchor="middle">NORTHBRIDGE FC</text>
   `),
   helios: poster('Poster drawing for Helios Taverna: a rayed sun above a plate and two olives', `
     <rect width="480" height="600" fill="${C.red}"/>

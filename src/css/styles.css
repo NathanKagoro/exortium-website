@@ -95,7 +95,7 @@ a { color: inherit; }
 /* Section headline with the second ink printed slightly out of register. */
 .shout {
   font-size: clamp(3rem, 10.5vw, 9.5rem);
-  text-shadow: 0.03em 0.03em 0 var(--misprint, var(--red));
+  text-shadow: 0.024em 0.024em 0 var(--misprint, var(--red));
   max-width: 12em;
   text-wrap: balance;
 }
@@ -251,7 +251,7 @@ a { color: inherit; }
 .hero { position: relative; }
 .hero__stage {
   position: relative;
-  padding: clamp(14px, 2.2vw, 32px) var(--gutter) clamp(96px, 17vh, 190px);
+  padding: clamp(14px, 2.2vw, 32px) var(--gutter) clamp(84px, 11vh, 150px);
   overflow: clip;
   touch-action: pan-y;
   cursor: crosshair;
@@ -271,7 +271,7 @@ a { color: inherit; }
 .hero__title { position: relative; color: var(--navy); }
 /* On short, wide screens the headline gives up some width so the first
    paragraph still shows above the fold; the network takes the spare column. */
-.hero__wide { max-width: max(62%, calc((100svh - 372px) * 2.2)); }
+.hero__wide { max-width: max(62%, calc((100svh - 372px) * 2.05)); }
 .hero__narrow { display: none; }
 .band {
   background: var(--red);
@@ -705,7 +705,7 @@ a { color: inherit; }
     .footer__word .fit__line {
       animation: drift linear both;
       animation-timeline: view();
-      animation-range: entry 0% cover 60%;
+      animation-range: entry 0% entry 90%;
     }
   }
 }
