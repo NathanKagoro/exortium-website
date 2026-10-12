@@ -1,0 +1,63 @@
+<!-- {"title": "Exortium: a concept marketing agency", "description": "Exortium is a concept agency: websites, social and adverts, and lead generation, presented as a loud print poster. The team, clients and results are illustrative.", "nav": "home"} -->
+<section class="hero" id="hero">
+  <div class="hero__stage">
+    <h1 class="hero__title">
+      <span class="fit hero__wide">
+        <span class="fit__line" style="--k:.2">We connect you</span>
+        <span class="fit__line band" style="--k:.2">to clients who</span>
+        <span class="fit__line" style="--k:.2">weren&rsquo;t looking.</span>
+      </span>
+      <span class="fit hero__narrow">
+        <span class="fit__line" style="--k:.3">We connect</span>
+        <span class="fit__line" style="--k:.3">you to</span>
+        <span class="fit__line band" style="--k:.3">clients who</span>
+        <span class="fit__line" style="--k:.3">weren&rsquo;t</span>
+        <span class="fit__line" style="--k:.3">looking.</span>
+      </span>
+    </h1>
+    <canvas id="network" aria-hidden="true"></canvas>
+    {{reg}}
+    <span class="crop crop--tl" aria-hidden="true"></span><span class="crop crop--tr" aria-hidden="true"></span>
+    <span class="crop crop--bl" aria-hidden="true"></span><span class="crop crop--br" aria-hidden="true"></span>
+  </div>
+  <div class="hero__foot">
+    <p class="hero__lede">Exortium builds the website, runs the adverts and chases the enquiries, so the people who need you find out that you exist.</p>
+    <p class="hero__hint"><span class="hero__you" aria-hidden="true"></span> The red dot is you. Move it with a pointer or a finger; tap to pass the word on.</p>
+    <div class="hero__actions">
+      <a class="btn" href="#services">See the services</a>
+      <a class="btn btn--line" href="#contact">Try the demo form</a>
+    </div>
+    <div class="hero__stamp">{{stamp}}</div>
+  </div>
+</section>
+
+{{marquee}}
+
+<section class="services" id="services">
+  <h2 class="shout">Three things, done properly.</h2>
+  {{services}}
+  <a class="btn btn--line" href="services.html">What each service includes</a>
+</section>
+
+<section class="work" id="work">
+  <div class="work__head">
+    <h2 class="shout">Clients we made up.</h2>
+    <p class="work__intro">Three imagined briefs and how we would answer them. No real firm commissioned this work and no results are claimed.</p>
+  </div>
+  {{carousel}}
+  <a class="btn btn--cream" href="case-studies.html">Read the three briefs in full</a>
+</section>
+
+<section class="team" id="team">
+  <h2 class="shout">The people. Also made up.</h2>
+  {{team}}
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact__head">
+    <h2 class="shout">Tell us what you need.</h2>
+    <p>Fill it in and see what a well-behaved form does: it checks your answers, says what is wrong, and tells you the truth about where they went.</p>
+    <p class="sticker" aria-hidden="true">Demo<br>form</p>
+  </div>
+  {{form}}
+</section>
