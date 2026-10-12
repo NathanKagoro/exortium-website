@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exortium Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="home-page">
+    <header class="top-nav top-nav--home top-nav--hidden" id="top">
+      <a class="brand" href="#top">Exortium</a>
+      <nav class="top-nav__details" aria-label="Detail Pages">
+        <a class="pill-button" href="./index.html">Home</a>
+        <a class="pill-button" href="./services.html">Services</a>
+        <a class="pill-button" href="./testimonials.html">Testimonials</a>
+        <a class="pill-button" href="./about.html">About</a>
+        <a class="pill-button" href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <canvas id="network-canvas" aria-hidden="true"></canvas>
+        <div class="hero__content-card">
+          <h1>Exortium Marketing</h1>
+          <p class="hero__minor">The beginning of your future</p>
+          <p class="hero__body">Connecting you to clients that didn't know they were looking for you</p>
+        </div>
+      </section>
+
+      <section class="services section-full" id="services">
+        <div class="section-header">
+          <p class="eyebrow">Services</p>
+          <h2>Growth Services Built To Scale</h2>
+        </div>
+        <div class="service-bars">
+          <article class="service-bar">
+            <h3>Web Design And Launching</h3>
+            <p>
+              Modern, conversion-focused websites designed, developed, and deployed with speed. We handle structure,
+              messaging, performance optimization, and launch support so your brand goes live with confidence.
+            </p>
+          </article>
+          <article class="service-bar">
+            <h3>Social Media Marketing And Ad Campaigns</h3>
+            <p>
+              Audience-first campaign systems across social channels with measurable ad performance. From creative concepts
+              to targeting and budget pacing, we build campaigns that consistently move attention into action.
+            </p>
+          </article>
+          <article class="service-bar">
+            <h3>Lead Generation</h3>
+            <p>
+              Intent-driven funnels that qualify prospects and feed your sales process continuously. We design journeys,
+              refine offers, and improve follow-up quality so your pipeline stays healthy month after month.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials section-full" id="testimonials">
+        <div class="section-header">
+          <p class="eyebrow">Previous Clients</p>
+          <h2>Results Across Industries</h2>
+        </div>
+        <div class="testimonial-shell" aria-live="polite">
+          <button id="testimonial-prev" class="arrow" aria-label="Previous testimonial">&#8592;</button>
+          <article class="testimonial-card" id="testimonial-card">
+            <div class="testimonial-content">
+              <h3 id="testimonial-name">Northbridge FC</h3>
+              <p class="testimonial-role" id="testimonial-role">Football Club</p>
+              <p id="testimonial-quote">
+                Exortium transformed our digital presence and doubled season ticket enquiries in one quarter.
+              </p>
+            </div>
+          </article>
+          <button id="testimonial-next" class="arrow" aria-label="Next testimonial">&#8594;</button>
+        </div>
+      </section>
+
+      <section class="team section-full" id="team">
+        <div class="section-header">
+          <p class="eyebrow">Meet The Team</p>
+          <h2>Focused Specialists Driving Growth</h2>
+        </div>
+        <div class="team-grid">
+          <article class="team-card team-card--standard">
+            <h3>Tamsin Vale</h3>
+            <p>Campaign strategist building precision ad systems and social momentum.</p>
+          </article>
+          <article class="team-card team-card--featured">
+            <h3>Corwin Ashby</h3>
+            <p>Creative lead shaping brand narratives and website experiences that convert.</p>
+          </article>
+          <article class="team-card team-card--standard">
+            <h3>Odalys Brandt</h3>
+            <p>Operations and analytics specialist ensuring performance scales with confidence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-wrap">
+          <div>
+            <p class="eyebrow">Leave Your Contact</p>
+            <h2>Tell Us What You Need</h2>
+          </div>
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@company.com" required />
+            </label>
+            <label>
+              Purpose
+              <select name="purpose" required>
+                <option value="" selected disabled>Select a purpose</option>
+                <option>Website project</option>
+                <option>Social media marketing</option>
+                <option>Ad campaigns</option>
+                <option>Lead generation</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Brief details"></textarea>
+            </label>
+            <button type="submit">Send Request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__line"></div>
+      <div class="site-footer__content">
+        <p>Exortium Marketing</p>
+        <p>Email: hello@exortiummarketing.com</p>
+        <p>Phone: +1 (415) 555-0192</p>
+        <p>Office: 88 Market Street, San Francisco, CA</p>
+      </div>
+    </footer>
+
+    <script src="./network-hero.js"></script>
+    <script src="./site.js"></script>
+  </body>
+</html>
