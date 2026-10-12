@@ -684,7 +684,8 @@ a { color: inherit; }
   .member:nth-child(n) { margin-top: 0; }
   .member__art { max-width: 300px; }
   .member:nth-child(2) .member__art { margin-left: auto; }
-  .sticker { position: absolute; right: 0; top: -92px; width: 104px; height: 104px; font-size: 1.7rem; }
+  .sticker { width: 104px; height: 104px; font-size: 1.7rem; justify-self: end; margin: -8px 8px 0 0; }
+  .pagehead .reg { display: none; }
   .contact-form { box-shadow: 8px 8px 0 var(--red); }
   .marquee__toggle { right: 26px; }
 }
