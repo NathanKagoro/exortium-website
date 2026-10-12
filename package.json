@@ -7,7 +7,8 @@
   "scripts": {
     "build": "node build.mjs",
     "serve": "node tools/serve.mjs dist 4350 /exortium-website/",
-    "test": "node --test test/",
+    "pretest": "node build.mjs",
+    "test": "node --test",
     "check": "node tools/check-links.mjs",
     "screenshots": "node tools/screenshots.mjs",
     "og": "node tools/make-og.mjs"
